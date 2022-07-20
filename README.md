@@ -1,2 +1,2 @@
-# k8s-debug
+# Kubernetes Debugging Image
 Kubernetes Toolbox for Debugging
