@@ -1,6 +1,6 @@
 ARG build_for=linux/amd64
 
-FROM debian:stable
+FROM nginx:latest
 LABEL maintainer="imjoseangel"
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -11,3 +11,5 @@ RUN apt-get update -y && \
     openssl wget curl dnsutils unzip git iputils-ping && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+EXPOSE 80
